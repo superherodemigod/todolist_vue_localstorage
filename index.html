@@ -1,0 +1,16 @@
+<html>
+<div id="app">
+    <ul>
+        <li v-for="item in items">
+            <input type="checkbox" v-model="item.completed"> {{ item.name }}
+        </li>
+    </ul>
+    <div>
+        <input v-model="newItemName">
+        <button type="button" @click="addItem">Add</button>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+<script src="script.js"></script>
+
+</html>
