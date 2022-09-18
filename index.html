@@ -2,7 +2,7 @@
 <div id="app">
     <ul>
         <li v-for="item in items">
-            <input type="checkbox" v-model="item.completed"> {{ item.name }}
+            <input type="checkbox" v-model="item.completed"> {{ item.name }} {{item}}
         </li>
     </ul>
     <div>
